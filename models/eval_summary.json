@@ -1,0 +1,60 @@
+{
+  "test_metrics": {
+    "accept": {
+      "auc_roc": 0.5202285172557185,
+      "precision_at_8": 0.17994337312519132,
+      "ndcg_at_8": 0.5592435091263995
+    },
+    "aov": {
+      "rmse": 0.12815558863256035
+    },
+    "abandon": {
+      "auc_roc": 0.6309352951472442
+    },
+    "timing": {
+      "auc_roc": 0.8704737711403298
+    },
+    "anchor": {
+      "auc_roc": 0.5476329864849463
+    }
+  },
+  "cold_start": {
+    "cold": {
+      "precision_at_8": 0.18728813559322033,
+      "ndcg_at_8": 0.5627925343071525,
+      "sessions": 590
+    },
+    "warm": {
+      "precision_at_8": 0.17832461710870376,
+      "ndcg_at_8": 0.558461318294631,
+      "sessions": 2677
+    }
+  },
+  "best_hyperparameters": {
+    "accept": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "min_child_samples": 20
+    },
+    "aov": {
+      "num_leaves": 31,
+      "learning_rate": 0.03,
+      "min_child_samples": 50
+    },
+    "abandon": {
+      "num_leaves": 63,
+      "learning_rate": 0.03,
+      "min_child_samples": 50
+    },
+    "timing": {
+      "num_leaves": 63,
+      "learning_rate": 0.1,
+      "min_child_samples": 20
+    },
+    "anchor": {
+      "num_leaves": 63,
+      "learning_rate": 0.1,
+      "min_child_samples": 20
+    }
+  }
+}
